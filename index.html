@@ -4,7 +4,9 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <link rel="stylesheet" href="/src/css/style.css">
     <script src="//unpkg.com/alpinejs" defer></script>
+
 </head>
 <body>
     <header>
@@ -32,29 +34,33 @@
         </section>
         <button>billeterie</button>
     </main>
-    <footer>
-        <section>
-            <h2>me contacter</h2>
-            <span>nom</span>
-            <span>adresse mail</span>
-            <span>sujet</span>
-            <span>Message</span>
-            <button>Envoyer</button>
+    <footer class="footer">
+        <section  class="footer__formulaire">
+            <h2 class="footer__formulaire title">me contacter</h2>
+            <span class="footer__formulaire item">Nom...</span>
+            <span class="footer__formulaire item">Adresse mail...</span>
+            <span class="footer__formulaire item">sujet...</span>
+            <span class="footer__formulaire item">Message...</span>
+            <button class="footer__formulaire button">Envoyer</button>
         </section>
-        <section>
-            <h2>follow us</h2>
-            <ul>
-                <li><img src="/public/img/instagram-167-svgrepo-com.svg" alt="insta logo"></li>
-                <li><img src="/public/img/X logo svg 1.svg" alt="X logo"></li>
-                <li><img src="/public/img/logo facebook svg.svg" alt=""></li>
+        <section class="footer__reseaux">
+            <h2 class="footer__reseaux title">follow us</h2>
+            <ul class="footer__reseaux liste">
+                <li class="footer__reseaux item"><img src="/public/img/Insta logo svg.svg" alt="insta logo"></li>
+                <li class="footer__reseaux item"><img src="/public/img/X logo svg 1.svg" alt="X logo"></li>
+                <li class="footer__reseaux item"><img src="/public/img/logo facebook svg.svg" alt=""></li>
             </ul>
-        </section>
+        </section >
+
+        <section class="footer__logo">
         <a href="/index.html"><img src="/public/img/LOGO site.svg" alt="Logo complet du site"></a>
-        <section>
-            <ul>
-                <li>contat</li>
-                <li>mentions légales</li>
-                <li>cookies</li>
+        </section>
+
+        <section class="footer__infos">
+            <ul class="footer__infos liste">
+                <li class="footer__infos item">contact</li>
+                <li class="footer__infos item">mentions légales</li>
+                <li class="footer__infos item">cookies</li>
             </ul>
         </section>
     </footer>

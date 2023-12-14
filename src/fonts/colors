@@ -1,0 +1,6 @@
+/* Color styles */
+--dark--gray: rgba(53, 53, 53, 1);
+--full-white: rgba(255, 255, 255, 1);
+--light-blue: rgba(46, 156, 240, 1);
+--creamy-white: rgba(235, 235, 235, 1);
+--full--black: rgba(0, 0, 0, 1);

@@ -1,0 +1,76 @@
+.footer {
+    background-color: rgb(0, 0, 0);
+    width: 100%;
+}
+
+.footer__formulaire.title {
+    color: white;
+    margin: 10px;
+    text-transform: uppercase;
+}
+
+.footer__formulaire.item {
+    margin: 10px;
+    padding: 10px;
+    background-color: rgba(235, 235, 235, 1); 
+    color: rgb(177, 177, 177);
+    border-radius: 7px;
+    display: grid;
+}
+
+.footer__formulaire.button {
+   float: right;
+   margin: 10px;
+   padding: 5px;
+   color: white;
+   border: white 2px solid;
+   background-color: black;
+}
+
+.footer__reseaux.title {
+    color: white;
+    margin: 10px;
+    text-transform: uppercase;
+}
+
+.footer__reseaux.liste {
+    text-align: left;
+    list-style: none;
+    color: white;
+    padding: 0;
+    margin: 0;
+    display: flex;
+}
+
+.footer__reseaux.item {
+    margin-bottom: 20px;
+    text-align: left;
+    display: flex;
+    margin: 15px;
+    padding: 5px;
+    border: white 0.5px solid;
+    background-color: white;
+    
+}
+
+.footer__infos.liste {
+    text-align: center;
+    list-style: none;
+    color: white;
+    padding: 0;
+    margin: 0;
+}
+
+.footer__infos.item {
+    margin-bottom: 20px;
+    text-align: center;
+    
+}
+.footer__logo {
+    text-align: center;
+    margin-bottom: 20px;
+    margin: auto;
+    display: block;
+    display: block; 
+    padding: 10px;
+}
