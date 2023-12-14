@@ -54,6 +54,7 @@
     width: 50%; /* Add this line */
     margin-bottom: 10px;
     border-radius: 5px;
+    padding: 1rem;
 }
 
 
