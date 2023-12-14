@@ -1,0 +1,57 @@
+.imageFoster {
+    position: relative;
+    width: 100%;
+    margin-bottom: 5px;
+    }
+
+.body{
+    width: 100%;
+    margin: 0;
+    background-color: rgba(235, 235, 235, 1);
+}
+
+.main {
+    width: 100%;
+    margin: 0;
+}
+@font-face {
+    font-family: 'MyCustomFont';
+    src: url(/src/fonts/JockeyOne-Regular.ttf ) format('truetype');
+}
+
+.infos {
+    width: 100%;
+    margin: 0;
+    text-align: center;
+}
+
+.infos__expo {
+    font-family: 'MyCustomFont';
+    font-size: 20px;
+    margin: 2px;
+    
+}
+
+.infos__pratiques {
+    font-size: 10px;
+    border: 1px solid black;
+    text-align: center;
+    display: block; /* Add this line */
+    margin: auto; /* Add this line */
+    width: 50%; /* Add this line */
+    margin-bottom: 10px;
+}
+
+.billeterie {
+    font-size: 18px;
+    background-color: rgba(46, 156, 240, 1);
+    border: 1px solid rgb(255, 255, 255);
+    box-shadow: 0 0 0 1px #ffffff, 0 0 0 3px rgba(46, 156, 240, 1), 0 0 0 1px #ffffff;
+    color: white;
+    text-align: center;
+    display: block; /* Add this line */
+    margin: auto; /* Add this line */
+    width: 50%; /* Add this line */
+    margin-bottom: 10px;
+    border-radius: 5px;
+}

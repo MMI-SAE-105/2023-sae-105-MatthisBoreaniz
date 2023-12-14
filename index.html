@@ -8,7 +8,7 @@
     <script src="//unpkg.com/alpinejs" defer></script>
 
 </head>
-<body>
+<body class="body">
     <header class="header">
         <a class="header__logo"><img src="/public/img/logo v2.svg" alt="logo du site "></a>
         <section class="header__search">
@@ -16,13 +16,13 @@
         <a href=""><img src="/public/img/menu logo.svg" alt="logo du site "></a>
         </section>
     </header>
-    <main>
-        <img src="/public/img/image jF Noir blanc.png" alt="photo de john foster noir et blanc">
-        <section>
-            <h1>
+    <main class="main">
+        <img class="imageFoster" src="/public/img/image jF Noir blanc.png" alt="photo de john foster noir et blanc">
+        <section class="infos">
+            <h1 class="infos__expo">
                 Exposition de Norman Foster
             </h1>
-            <p>Du 13/04 au 23/06 2024 <br>Fondation Cartier, 261 Bd Raspail, 75014 Paris</p>
+            <p class="infos__pratiques"><strong>Du 13/04 au 23/06 2024</strong><br>Fondation Cartier, 261 Bd Raspail, 75014 Paris</p>
         </section>
         <section>
             <a href="https://fr.wikipedia.org/wiki/Apple_Park"><img src="/public/img/photo apple park.png" alt="apple park">apple park</a>
@@ -34,19 +34,19 @@
             <a href="https://fr.wikipedia.org/wiki/Millennium_Bridge_(Londres)"><img src="/public/img/photo millenium bridge.png" alt="milleium bridge">milenium Bridge</a>
             <a href="https://fr.wikipedia.org/wiki/Nippon_Telegraph_and_Telephone"><img src="/public/img/photo ntt.png" alt="NTT">NTT</a>
         </section>
-        <button>billeterie</button>
+        <button class="billeterie"> <strong>Billeterie</strong></button>
     </main>
     <footer class="footer">
         <section  class="footer__formulaire">
             <h2 class="footer__formulaire title">me contacter</h2>
             <span class="footer__formulaire item">Nom...</span>
             <span class="footer__formulaire item">Adresse mail...</span>
-            <span class="footer__formulaire item">sujet...</span>
-            <span class="footer__formulaire item">Message...</span>
+            <span class="footer__formulaire item">Sujet...</span>
+            <span class="footer__formulaire item" class="message">Message...</span>
             <button class="footer__formulaire button">Envoyer</button>
         </section>
         <section class="footer__reseaux">
-            <h2 class="footer__reseaux title">follow us</h2>
+            <h2 class="footer__reseaux title"><br><br>follow us</h2>
             <ul class="footer__reseaux liste">
                 <li class="footer__reseaux item"><img src="/public/img/Insta logo svg.svg" alt="insta logo"></li>
                 <li class="footer__reseaux item"><img src="/public/img/X logo svg 1.svg" alt="X logo"></li>
