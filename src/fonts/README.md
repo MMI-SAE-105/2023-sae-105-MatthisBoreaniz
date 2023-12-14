@@ -1,3 +1,3 @@
 # Fontes personnelles
 
-Placez ici les fontes personnalisées (icônes sous forme de fonte, fontes autres que google fonts) 
+@import url ('https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&family=Playfair+Display:wght@700&display=swap');
