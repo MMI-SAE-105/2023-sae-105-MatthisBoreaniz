@@ -153,6 +153,7 @@
         font-size: 50px;
     }
     .actif {
+        transition: all 0.8s ease-in-out;
       color: rgba(46, 156, 240, 1);;
      text-decoration: none;
     }

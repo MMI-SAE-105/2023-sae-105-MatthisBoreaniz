@@ -1,19 +1,57 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" x-data="menuIsOpen: false">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <link rel="stylesheet" href="/src/css/style.css">
     <script src="//unpkg.com/alpinejs" defer></script>
-
+  
 </head>
-<body class="body">
+<body class="body" x-data="{ menuIsOpen: false }">
     <header class="header">
         <a class="header__logo"><img src="/public/img/logo v2.svg" alt="logo du site "></a>
         <section class="header__search">
-        <a class="header__menu"><img src="/public/img/search logo.svg" alt="logo du site "></a>
-        <a href=""><img src="/public/img/menu logo.svg" alt="logo du site "></a>
+            <button arial-controls="maiNav" 
+      @click="menuIsOpen = ! menuIsOpen" 
+      class="header__menuBtn"
+      ><img src="/public/img/menu logo.svg" alt="logo du menu "></button>
+      <nav id="mainNav" 
+      x-show="menuIsOpen" 
+      x-transition.duration.800ms
+      class="menu"
+      >
+        <section class="section__menu">
+            <span>
+                Menu
+            </span>
+            <section class="section__menu-presentation">
+                <span>
+                    Présentations
+                </span>
+                <ul>
+                    <li>Norman Foster</li>
+                    <li>Tour Cepsa</li>
+                    <li>Khan Shatyr</li>
+                    <li>8 Canada Square</li>
+                    <li>NTT</li>
+                    <li>Millenium Bridge</li>
+                    <li>Apple Park</li>
+                    <li>Jameson house</li>
+                    <li>The Bow</li>
+                </ul>
+            </section>
+            <section>
+                <span>+ D'infos</span>  
+                <ul>
+                    <li>Tarifs et Horaires</li>
+                </ul>
+            </section>
+
+        </section>
+          
+      </nav>
+    </header>
         </section>
     </header>
     <main class="main">
