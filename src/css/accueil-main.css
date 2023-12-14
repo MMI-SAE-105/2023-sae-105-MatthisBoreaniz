@@ -55,3 +55,110 @@
     margin-bottom: 10px;
     border-radius: 5px;
 }
+
+
+/* caroussel*/
+{
+    box-sizing: border-box;
+    }
+    img {
+        max-width: 100%;
+        height: auto;
+    }
+    .carrousel_parent-ecrans {
+
+        display: flex;
+
+        width: 100%;
+        overflow-x: scroll; 
+        scroll-behavior: smooth; 
+        scroll-snap-type: x mandatory; 
+        
+    }
+
+    a.carrousel_ecran_text {
+        text-decoration: none;
+    }
+
+    .carrousel_ecran {
+        width: 100%;
+        flex: none;
+        scroll-snap-align: start; 
+        text-align: center;
+        margin: 10px;
+        text-align: center;
+
+    }
+    
+
+    a.carrousel_ecran_image {
+        width: 70%;
+        height: 100%;
+        text-decoration: none;
+    }
+
+    .carrousel_ecran_text {
+        background-color: rgba(53, 53, 53, 1);
+        padding: 10px;
+        margin-left: 40px;
+        margin-right: 40px;
+        text-decoration: white;
+        color : white;
+    }
+
+    .carrousel_ecran figure {
+
+        margin: 0;
+    }
+
+    .carrousel {
+      position: relative;
+    }
+
+    .carrousel_btn {
+      position: absolute;
+      top: 50%;
+      top: calc(
+        min(500px, 100vw) / 16 * 9 / 2 + 1rem
+  ); 
+      transform: translateY(-50%); 
+      width: 2rem;
+      height: 2rem;
+      background: rgba(0,0,0,0.5);
+      border-radius: 50%;
+      border: none;
+      display: grid;
+      place-content: center;
+      color: #fff;
+    }
+
+    .carrousel_btn-avant {
+      left: 0;
+      z-index: 1;
+    }
+
+    .carrousel_btn-apres {
+      right: 0;
+      z-index: 1;
+    }
+
+    .carroussel_lien {
+        color: black;
+        text-decoration: none;
+        font-size: 50px;
+    }
+    .actif {
+      color: red;
+     text-decoration: none;
+    }
+ 
+
+.carroussel_liste-liens {
+
+    display: flex;
+    justify-content: center; 
+   margin: 0;
+    padding: 0; 
+    list-style: none;
+    gap: 1rem;
+  }
