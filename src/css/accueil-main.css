@@ -59,6 +59,12 @@
 
 
 /* caroussel*/
+.carrousel {
+    border: 1px solid black;
+    margin-bottom: 30px;
+    margin-top: 20px;
+}
+
 {
     box-sizing: border-box;
     }
@@ -147,7 +153,7 @@
         font-size: 50px;
     }
     .actif {
-      color: red;
+      color: rgba(46, 156, 240, 1);;
      text-decoration: none;
     }
  
