@@ -1,6 +1,7 @@
 .footer {
     background-color: rgb(0, 0, 0);
     width: 100%;
+    padding: 10px;
 }
 
 .footer__formulaire.title {
