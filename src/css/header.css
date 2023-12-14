@@ -1,0 +1,22 @@
+.header {
+    display: flex;
+    background-color:rgba(235, 235, 235, 1);
+    padding: 7px;
+    width: 100%;
+    align-items: center;
+}
+
+.header__search {
+    flex: 1;
+    display: flex;
+    justify-content: right;
+    align-items: center;
+}
+
+.header__menu {
+    margin: 10px;
+}
+
+.header__logo {
+    height: auto;
+}
