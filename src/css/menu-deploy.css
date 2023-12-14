@@ -1,3 +1,9 @@
+
+@font-face {
+    font-family: 'MyCustomFont';
+    src: url(/src/fonts/JockeyOne-Regular.ttf ) format('truetype');
+}
+
 .menu {
     position: fixed;
     top: 50%;
@@ -9,11 +15,53 @@
     background-color:rgba(53, 53, 53, 1);
 }
 .menu-open {
-    position: fixed;
-    top: 0;
-    left: 0;
+    /* autres styles */
+    pointer-events: none;
     width: 100%;
-    background-color: rgba(0, 0, 0, 0.5);
-    z-index: 2;
-;
 }
+
+.menu-open .menu {
+    /* autres styles */
+    pointer-events: all;
+}
+
+ .section__menu.title {
+    display: flex;
+    justify-content: center;
+     color: white;
+     font-family: 'MyCustomFont';
+     margin: 10px;
+     margin-bottom: 20px;
+     font-size: 20px;
+ }
+
+ .section__menu_presentation {
+   text-align: center;
+   margin: 0;
+ }
+
+ .section__menu_presentation.title {
+    color: rgba(46, 156, 240, 1);
+    padding-top: 10rem ;
+    font-family: 'MyCustomFont';
+    font-size: 12px;
+ }
+ 
+ .section__menu_presentation.list {
+    list-style: none;
+    padding: 0;
+    margin: 20px;
+ }
+
+ .section__menu_presentation.item {
+    font-family: 'MyCustomFont';
+    margin: 10px;
+    padding-left: 5px;
+    background-color: rgba(46, 156, 240, 1);
+    color: rgb(255, 255, 255);
+    border-radius: 20px;
+    display: grid;
+    padding-bottom: 0.7rem;
+    padding-top: 0.7rem ;
+
+ }

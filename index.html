@@ -8,7 +8,7 @@
     <script src="//unpkg.com/alpinejs" defer></script>
   
 </head>
-<body class="body" x-data="{ menuIsOpen: false }">
+<body x-data="{ menuIsOpen: false }" x-bind:class="{ 'no-scroll': menuIsOpen }">
     <header class="header">
         <a class="header__logo"><img src="/public/img/logo v2.svg" alt="logo du site "></a>
         <section class="header__search">
@@ -19,36 +19,42 @@
       <nav id="mainNav" 
       x-show="menuIsOpen" 
       x-transition.duration.800ms
+
       class="menu"
       >
-        <section class="section__menu">
-            <span>
+    <section class="section__menu">
+
+            <span class="section__menu title">
                 Menu
             </span>
-            <section class="section__menu-presentation">
-                <span>
+
+            <section class="section__menu_presentation">
+                <span class="section__menu_presentation title">
                     Présentations
                 </span>
-                <ul>
-                    <li>Norman Foster</li>
-                    <li>Tour Cepsa</li>
-                    <li>Khan Shatyr</li>
-                    <li>8 Canada Square</li>
-                    <li>NTT</li>
-                    <li>Millenium Bridge</li>
-                    <li>Apple Park</li>
-                    <li>Jameson house</li>
-                    <li>The Bow</li>
-                </ul>
-            </section>
-            <section>
-                <span>+ D'infos</span>  
-                <ul>
-                    <li>Tarifs et Horaires</li>
+                <ul class="section__menu_presentation list">
+                    <li class="section__menu_presentation item">Norman Foster</li>
+                    <li class="section__menu_presentation item">Tour Cepsa</li>
+                    <li class="section__menu_presentation item">Khan Shatyr</li>
+                    <li class="section__menu_presentation item">8 Canada Square</li>
+                    <li class="section__menu_presentation item">NTT</li>
+                    <li class="section__menu_presentation item">Millenium Bridge</li>
+                    <li class="section__menu_presentation item">Apple Park</li>
+                    <li class="section__menu_presentation item">Jameson house</li>
+                    <li class="section__menu_presentation item">The Bow</li>
                 </ul>
             </section>
 
-        </section>
+            <section class="section__menu_presentation">
+                <span class="section__menu_presentation title">
+                    + D'infos
+                </span> 
+                <ul class="section__menu_presentation list">
+                    <li class="section__menu_presentation item">Tarifs et Horaires</li>
+                </ul>
+            </section>
+
+    </section>
           
       </nav>
     </header>
