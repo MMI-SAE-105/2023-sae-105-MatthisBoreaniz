@@ -81,3 +81,7 @@
     display: block; 
     padding: 10px;
 }
+
+.flagSwitch {
+    width: 20%;
+}
