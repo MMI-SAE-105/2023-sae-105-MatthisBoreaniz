@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en" x-data="menuIsOpen: false">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>jameson House</title>
+    <link rel="stylesheet" href="/src/css/style.css">
+    <script src="//unpkg.com/alpinejs" defer></script>
+    
+</head>
+
+<body x-data="{ menuIsOpen: false }" x-bind:class="{ 'no-scroll': menuIsOpen }">
+    <header class="header">
+        <a class="header__logo" href="index.html"><img src="/public/img/logo v2.svg" alt="logo du site "></a>
+        <section class="header__search">
+            <button arial-controls="maiNav" 
+      @click="menuIsOpen = ! menuIsOpen" 
+      class="header__menuBtn"
+      ><img src="/public/img/menu logo.svg" alt="logo du menu "></button>
+      <nav id="mainNav" 
+      x-show="menuIsOpen" 
+      x-transition.duration.800ms
+
+      class="menu"
+      >
+    <section class="section__menu">
+
+            <span class="section__menu title">
+                Menu
+            </span>
+
+            <section class="section__menu_presentation">
+                <span class="section__menu_presentation title">
+                    Présentations
+                </span>
+                <ul class="section__menu_presentation list">
+                    <a href="/architecte.html"><li class="section__menu_presentation item">Norman Foster</li></a>
+                    <a href=""><li class="section__menu_presentation item">Tour Cepsa</li></a>
+                    <a href=""><li class="section__menu_presentation item">Khan Shatyr</li></a>
+                    <a href=""><li class="section__menu_presentation item">8 Canada Square</li></a>
+                    <a href=""><li class="section__menu_presentation item">NTT</li></a>
+                    <a href=""><li class="section__menu_presentation item">Millenium Bridge</li></a>
+                    <a href=""><li class="section__menu_presentation item">Apple Park</li></a>
+                    <a href=""><li class="section__menu_presentation item">Jameson house</li></a>
+                    <a href=""><li class="section__menu_presentation item">The Bow</li></a>
+                </ul>
+            </section>
+
+            <section class="section__menu_presentation">
+                <span class="section__menu_presentation title">
+                    + D'infos
+                </span> 
+                <ul class="section__menu_presentation list">
+                    <a href="/infos.html"><li class="section__menu_presentation item">Tarifs et Horaires</li></a>
+                </ul>
+            </section>
+
+    </section>
+      </nav>
+    </header>
+
+    <H1 class="infos__title">Jameson House</H1>
+    <figure>
+        <img  class="image__article" src="/public/img/photo jameson house.png" alt="jameson house">
+        <figcaption  class="legende__image">Jameson House</figcaption>
+    </figure>
+    <p   class="paragraphe__image"> La Jameson House est un gratte-ciel résidentiel et commercial situé à Vancouver, en Colombie-Britannique, au Canada.Elle est connue pour son design moderne et innovant, elle est caractérisée par une combinaison de verre, d'acier et de béton, créant une esthétique contemporaine et élégante.
+    </p>
+    <figure>
+        <img  class="image__article" src="/public/img/jameson house interieur.jpg" alt="interieur jams+eson house ">
+        <figcaption class="legende__image">Interieur de la Jameson House</figcaption>
+    </figure>
+    <p class="paragraphe__image"> La Jameson House est un immeuble à usage mixte, combinant des espaces résidentiels avec des bureaux commerciaux et des espaces de vente au détail. Cette polyvalence reflète la tendance croissante des immeubles urbains modernes à offrir une variété d'utilisations dans un même espace. En raison de sa hauteur et de son emplacement, la Jameson House offre des vues panoramiques spectaculaires sur la ville de Vancouver, les montagnes et l'océan. 
+    </p>
+    <figure>
+        <img class="image__article" src="/public/img/vancouver.jpg" alt="aVue vancouver">
+        <figcaption class="legende__image">Panorama Vancouver</figcaption>
+    </figure>
+  
+    
+
+    <button class="billeterie"> <strong>Billeterie</strong></button>
+
+    <footer class="footer">
+        <section  class="footer__formulaire">
+            <h2 class="footer__formulaire title">me contacter</h2>
+            <span class="footer__formulaire item">Nom...</span>
+            <span class="footer__formulaire item">Adresse mail...</span>
+            <span class="footer__formulaire item">Sujet...</span>
+            <span class="footer__formulaire item" class="message">Message...</span>
+            <button class="footer__formulaire button">Envoyer</button>
+        </section>
+        <section class="footer__reseaux">
+            <h2 class="footer__reseaux title"><br><br>follow us</h2>
+            <ul class="footer__reseaux liste">
+                <li class="footer__reseaux item"><img src="/public/img/Insta logo svg.svg" alt="insta logo"></li>
+                <li class="footer__reseaux item"><img src="/public/img/X logo svg 1.svg" alt="X logo"></li>
+                <li class="footer__reseaux item"><img src="/public/img/logo facebook svg.svg" alt=""></li>
+            </ul>
+        </section >
+
+        <section class="footer__logo">
+        <a href="/index.html"><img src="/public/img/LOGO site.svg" alt="Logo complet du site"></a>
+        </section>
+
+        <section class="footer__infos">
+            <ul class="footer__infos liste">
+                <li class="footer__infos item">contact</li>
+                <li class="footer__infos item">mentions légales</li>
+                <li class="footer__infos item">cookies</li>
+            </ul>
+        </section>
+    </footer>
+</body>
+</html>
