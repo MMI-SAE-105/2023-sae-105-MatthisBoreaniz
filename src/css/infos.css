@@ -42,6 +42,8 @@ font-size: 30px;
 
 .tarifs {
     display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 4fr;
 }
 
 .sidebar {
