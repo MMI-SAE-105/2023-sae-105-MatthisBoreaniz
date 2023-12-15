@@ -1,0 +1,13 @@
+
+<!DOCTYPE html>
+<script defer src="https://unpkg.com/alpinejs@3.x.x/dist/cdn.min.js"></script>
+<link rel="stylesheet" href="/src/css/style.css">
+<title >404 - Page Non trouvée</title>
+<h1 class="p404__title">Page Non trouvée</h1>
+<form action="https://architech.boreaniz.fr " method="GET" 
+    x-data="{ q:'', }" 
+    x-on:submit.prevent="q = q + ' architech.boreaniz.fr'; $el.submit()">
+    <label for="q">Text à chercher :</label>
+    <input type="text" id="q" name="q" x-model="q">
+    <button class="p404__btn" type="submit">Rechercher</button>
+</form>
