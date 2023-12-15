@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="en" x-data="menuIsOpen: false">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Accueil</title>
+    <link rel="stylesheet" href="/src/css/style.css">
+    <script src="//unpkg.com/alpinejs" defer></script>
+  
+</head>
+<body x-data="{ menuIsOpen: false }" x-bind:class="{ 'no-scroll': menuIsOpen }">
+    <header class="header">
+        <a class="header__logo" href="/index.html"><img src="/public/img/logo v2.svg" alt="logo du site "></a>
+        <section class="header__search">
+            <button aria-controls="mainNav" 
+            @click="menuIsOpen = ! menuIsOpen" 
+            class="header__menuBtn"
+            x-text="menuIsOpen ? 'X' : '&#9776;'"
+          ><img src="/public/img/menu logo.svg" alt="logo du menu "></button>
+      <nav id="mainNav" 
+      x-show="menuIsOpen" 
+
+      class="menu"
+      >
+    <section class="section__menu">
+
+            <span class="section__menu title">
+                Menu
+            </span>
+
+            <section class="section__menu_presentation">
+                <span class="section__menu_presentation title">
+                    Présentations
+                </span>
+                <ul class="section__menu_presentation list">
+                    <a href="/architecte.html"><li class="section__menu_presentation item">Norman Foster</li></a>
+                    <a href="/TourCepsa.html"><li class="section__menu_presentation item">Tour Cepsa</li></a>
+                    <a href="/KhanShatyr.html"><li class="section__menu_presentation item">Khan Shatyr</li></a>
+                    <a href="/8CanadaSquare.html"><li class="section__menu_presentation item">8 Canada Square</li></a>
+                    <a href="/NTT.html"><li class="section__menu_presentation item">NTT</li></a>
+                    <a href="/Millenium.html"><li class="section__menu_presentation item">Millenium Bridge</li></a>
+                    <a href="/applePark.html"><li class="section__menu_presentation item">Apple Park</li></a>
+                    <a href="/JamesonHouse.html"><li class="section__menu_presentation item">Jameson house</li></a>
+                    <a href="/TheBow.html"><li class="section__menu_presentation item">The Bow</li></a>
+                </ul>
+            </section>
+
+            <section class="section__menu_presentation">
+                <span class="section__menu_presentation title">
+                    + D'infos
+                </span> 
+                <ul class="section__menu_presentation list">
+                    <a href="/infos.html"><li class="section__menu_presentation item">Tarifs et Horaires</li></a>
+                </ul>
+            </section>
+
+    </section>
+          
+      </nav>
+        </section>
+    </header>
+    <main class="main">
+        <img class="imageFoster" src="/public/img/image jF Noir blanc.png" alt="photo de john foster noir et blanc">
+        <section class="infos">
+            <h1 class="infos__expo">
+                Norman Foster Exposition
+            </h1>
+            <p class="infos__pratiques"><strong>Du 13/04 au 23/06 2024</strong><br>Fondation Cartier, 261 Bd Raspail,<br> 75014 Paris</p>
+        </section>
+        <div class="carrousel" x-data="{hrefCourant: '#ecran-1',}">
+        <button class="carrousel_btn carrousel_btn-avant" aria-label="slide prÃ©cedant"
+@click="$refs.parent.scrollBy(-$refs.parent.clientWidth, 0)">&lt;
+</button>
+<button class="carrousel_btn carrousel_btn-apres" aria-label="slide suivant"
+@click="$refs.parent.scrollBy($refs.parent.clientWidth, 0)">&gt;</button>
+
+        <div class="carrousel_parent-ecrans" x-ref="parent"
+        @scroll.debounce.250ms.passive="
+        hrefCourant = '#'+
+                          [...$refs.parent.children]
+                           .find(e=>e.getBoundingClientRect().x>=0)
+                           .id
+                                             ">
+            
+            <div id="ecran-1" class="carrousel_ecran">
+                <figure>
+                    <a href="https://fr.wikipedia.org/wiki/Nippon_Telegraph_and_Telephone"><img class="carrousel_ecran_image" src="/public/img/photo ntt.png" alt="image ntt">
+                    <figcaption class="carrousel_ecran_text">Nippon Telegraph and Telephone (1985)</figcaption></a>
+                </figure>
+            </div>
+            <div id="ecran-2" class="carrousel_ecran">
+                <figure>
+                    <a href="https://fr.wikipedia.org/wiki/Millennium_Bridge_(Londres)"><img class="carrousel_ecran_image" src="/public/img/photo millenium bridge.png" alt="image millenium bridge">
+                    <figcaption class="carrousel_ecran_text">Millenium Bridge (2000)</figcaption></a>
+                </figure>
+            </div>
+            <div id="ecran-3" class="carrousel_ecran">
+                <figure>
+                    <a href="https://fr.wikipedia.org/wiki/8_Canada_Square"><img class="carrousel_ecran_image" src="/public/img/photo 8 square.png" alt="image 8 Canada Square">
+                    <figcaption class="carrousel_ecran_text">8 Canada Square (2002)</figcaption></a>
+                </figure>
+            </div>
+            <div id="ecran-4" class="carrousel_ecran">
+                <figure>
+                    <a href="https://fr.wikipedia.org/wiki/Tour_Cepsa"><img class="carrousel_ecran_image" src="/public/img/photo tour cepsa.png" alt="image La Tour Cepsa (2009)">
+                    <figcaption class="carrousel_ecran_text">La Tour Cepsa (2009)</figcaption></a>
+                </figure>
+            </div>
+            <div id="ecran-5" class="carrousel_ecran">
+                <figure>
+                    <a href="https://fr.wikipedia.org/wiki/Khan_Shatyr"><img class="carrousel_ecran_image" src="/public/img/photo khan shatyr.png" alt="image Le Khan Shatyr (2010)">
+                    <figcaption class="carrousel_ecran_text">Le Khan Shatyr (2010)</figcaption></a>
+                </figure>
+            </div>
+            <div id="ecran-6" class="carrousel_ecran">
+                <figure>
+                    <a href="https://fr.wikipedia.org/wiki/Jameson_House"><img class="carrousel_ecran_image" src="/public/img/photo jameson house.png" alt="image Jameson House (2011)">
+                    <figcaption class="carrousel_ecran_text">Jameson House (2011)</figcaption></a>
+                </figure>
+            </div>
+            <div id="ecran-7" class="carrousel_ecran">
+                <figure>
+                    <a href="https://fr.wikipedia.org/wiki/The_Bow"><img class="carrousel_ecran_image" src="/public/img/photo thebow.png" alt="image The Bow (2012)">
+                    <figcaption class="carrousel_ecran_text">The Bow (2012)</figcaption></a>
+                </figure>
+            </div>
+            <div id="ecran-8" class="carrousel_ecran">
+                <figure>
+                    <a href="https://fr.wikipedia.org/wiki/Apple_Park"><img class="carrousel_ecran_image" src="/public/img/photo apple park.png" alt="image Apple Park (2017)">
+                    <figcaption class="carrousel_ecran_text">Apple Park (2017)</figcaption></a>
+                </figure>
+            </div>
+        </div>
+        <ul class="carroussel_liste-liens">
+            <li><a href="#ecran-1" class="carroussel_lien" :class="{actif:hrefCourant==='#ecran-1'}"><strong>.</strong></a></li>
+            <li><a href="#ecran-2" class="carroussel_lien" :class="{actif:hrefCourant==='#ecran-2'}"><strong>.</strong></a></li>
+            <li><a href="#ecran-3" class="carroussel_lien" :class="{actif:hrefCourant==='#ecran-3'}"><strong>.</strong></a></li>
+            <li><a href="#ecran-4" class="carroussel_lien" :class="{actif:hrefCourant==='#ecran-4'}"><strong>.</strong></a></li>
+            <li><a href="#ecran-5" class="carroussel_lien" :class="{actif:hrefCourant==='#ecran-5'}"><strong>.</strong></a></li>
+            <li><a href="#ecran-6" class="carroussel_lien" :class="{actif:hrefCourant==='#ecran-6'}"><strong>.</strong></a></li>
+            <li><a href="#ecran-7" class="carroussel_lien" :class="{actif:hrefCourant==='#ecran-7'}"><strong>.</strong></a></li>
+            <li><a href="#ecran-8" class="carroussel_lien" :class="{actif:hrefCourant==='#ecran-8'}"><strong>.</strong></a></li>
+        </ul>
+    </div>
+        <button class="billeterie"> <strong>Billeterie</strong></button>
+    </main>
+
+    <footer class="footer">
+        <section  class="footer__formulaire">
+            <h2 class="footer__formulaire title">me contacter</h2>
+            <span class="footer__formulaire item">Nom...</span>
+            <span class="footer__formulaire item">Adresse mail...</span>
+            <span class="footer__formulaire item">Sujet...</span>
+            <span class="footer__formulaire item" class="message">Message...</span>
+            <button class="footer__formulaire button">Envoyer</button>
+        </section>
+        <section class="footer__reseaux">
+            <h2 class="footer__reseaux title"><br><br>follow us</h2>
+            <ul class="footer__reseaux liste">
+                <li class="footer__reseaux item"><img src="/public/img/Insta logo svg.svg" alt="insta logo"></li>
+                <li class="footer__reseaux item"><img src="/public/img/X logo svg 1.svg" alt="X logo"></li>
+                <li class="footer__reseaux item"><img src="/public/img/logo facebook svg.svg" alt=""></li>
+            </ul>
+        </section >
+
+        <section class="footer__logo">
+        <a href="/index.html"><img src="/public/img/LOGO site.svg" alt="Logo complet du site"></a>
+        </section>
+
+        <section class="footer__infos">
+            <ul class="footer__infos liste">
+                <li class="footer__infos item">contact</li>
+                <li class="footer__infos item">mentions légales</li>
+                <li class="footer__infos item">cookies</li>
+            </ul>
+        </section>
+    </footer>
+</body>
+</html>

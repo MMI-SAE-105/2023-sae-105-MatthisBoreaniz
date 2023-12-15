@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en" x-data="menuIsOpen: false">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>milleniumBridge</title>
+    <link rel="stylesheet" href="/src/css/style.css">
+    <script src="//unpkg.com/alpinejs" defer></script>
+    
+</head>
+
+<body x-data="{ menuIsOpen: false }" x-bind:class="{ 'no-scroll': menuIsOpen }">
+    <header class="header">
+        <a class="header__logo" href="index.html"><img src="/public/img/logo v2.svg" alt="logo du site "></a>
+        <section class="header__search">
+            <button arial-controls="maiNav" 
+      @click="menuIsOpen = ! menuIsOpen" 
+      class="header__menuBtn"
+      ><img src="/public/img/menu logo.svg" alt="logo du menu "></button>
+      <nav id="mainNav" 
+      x-show="menuIsOpen" 
+      x-transition.duration.800ms
+
+      class="menu"
+      >
+    <section class="section__menu">
+
+            <span class="section__menu title">
+                Menu
+            </span>
+
+            <section class="section__menu_presentation">
+                <span class="section__menu_presentation title">
+                    Présentations
+                </span>
+                <ul class="section__menu_presentation list">
+                    <a href="/architecte.html"><li class="section__menu_presentation item">Norman Foster</li></a>
+                    <a href="/TourCepsa.html"><li class="section__menu_presentation item">Tour Cepsa</li></a>
+                    <a href="/KhanShatyr.html"><li class="section__menu_presentation item">Khan Shatyr</li></a>
+                    <a href="/8CanadaSquare.html"><li class="section__menu_presentation item">8 Canada Square</li></a>
+                    <a href="/NTT.html"><li class="section__menu_presentation item">NTT</li></a>
+                    <a href="/Millenium.html"><li class="section__menu_presentation item">Millenium Bridge</li></a>
+                    <a href="/applePark.html"><li class="section__menu_presentation item">Apple Park</li></a>
+                    <a href="/JamesonHouse.html"><li class="section__menu_presentation item">Jameson house</li></a>
+                    <a href="/TheBow.html"><li class="section__menu_presentation item">The Bow</li></a>
+                </ul>
+            </section>
+
+            <section class="section__menu_presentation">
+                <span class="section__menu_presentation title">
+                    + D'infos
+                </span> 
+                <ul class="section__menu_presentation list">
+                    <a href="/infos.html"><li class="section__menu_presentation item">Tarifs et Horaires</li></a>
+                </ul>
+            </section>
+
+    </section>
+      </nav>
+    </header>
+
+    <H1 class="infos__title">Millenium Bridge</H1>
+    <figure>
+        <img  class="image__article" src="/public/img/photo millenium bridge.png" alt="millenium bridge">
+        <figcaption  class="legende__image">Photo du millenium bridge</figcaption>
+    </figure>
+    <p   class="paragraphe__image"> Le Millennium Bridge, également connu sous le nom de London Millennium Footbridge, est un pont piétonnier emblématique situé à Londres, au Royaume-Uni. Le pont a été conçu par l'architecte Sir Norman Foster, l'ingénieur Sir Anthony Caro, et les ingénieurs Arup. Il présente un design moderne et élégant, avec des câbles d'acier qui soutiennent la structure. La simplicité de son esthétique contraste avec la richesse historique des structures environnantes.
+    </p>
+    <figure>
+        <img  class="image__article" src="/public/img/sir anthony caro.webp" alt="Sir Anthony Caro ">
+        <figcaption class="legende__image">Sir Anthony Caro</figcaption>
+    </figure>
+    <p class="paragraphe__image"> Le Millennium Bridge a été inauguré le 10 juin 2000, en l'honneur du passage au nouveau millénaire. Des milliers de personnes ont traversé le pont lors de sa première journée, créant une image mémorable de la célébration.Cependant, le pont a été fermé seulement trois jours après son ouverture en raison de vibrations excessives. Des modifications ont dû être apportées pour résoudre ce problème, et le pont a rouvert en 2002.
+    </p>
+    <figure>
+        <img class="image__article" src="/public/img/harry potter mb.jpg" alt="Millenium Bridge Vibrations ">
+        <figcaption class="legende__image">Millenium Bridge Vibrations (image fictive extrait de Harry Potter) </figcaption>
+    </figure>
+    <button class="billeterie"> <strong>Billeterie</strong></button>
+
+    <footer class="footer">
+        <section  class="footer__formulaire">
+            <h2 class="footer__formulaire title">me contacter</h2>
+            <span class="footer__formulaire item">Nom...</span>
+            <span class="footer__formulaire item">Adresse mail...</span>
+            <span class="footer__formulaire item">Sujet...</span>
+            <span class="footer__formulaire item" class="message">Message...</span>
+            <button class="footer__formulaire button">Envoyer</button>
+        </section>
+        <section class="footer__reseaux">
+            <h2 class="footer__reseaux title"><br><br>follow us</h2>
+            <ul class="footer__reseaux liste">
+                <li class="footer__reseaux item"><img src="/public/img/Insta logo svg.svg" alt="insta logo"></li>
+                <li class="footer__reseaux item"><img src="/public/img/X logo svg 1.svg" alt="X logo"></li>
+                <li class="footer__reseaux item"><img src="/public/img/logo facebook svg.svg" alt=""></li>
+            </ul>
+        </section >
+
+        <section class="footer__logo">
+        <a href="/index.html"><img src="/public/img/LOGO site.svg" alt="Logo complet du site"></a>
+        </section>
+
+        <section class="footer__infos">
+            <ul class="footer__infos liste">
+                <li class="footer__infos item">contact</li>
+                <li class="footer__infos item">mentions légales</li>
+                <li class="footer__infos item">cookies</li>
+            </ul>
+        </section>
+    </footer>
+</body>
+</html>
