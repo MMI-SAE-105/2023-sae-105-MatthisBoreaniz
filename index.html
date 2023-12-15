@@ -13,12 +13,12 @@
         <a class="header__logo" href="/index.html"><img src="/public/img/logo v2.svg" alt="logo du site "></a>
         <section class="header__search">
             <button aria-controls="mainNav" 
-  @click="menuIsOpen = ! menuIsOpen" 
-  class="header__menuBtn"
-  ><img src="/public/img/menu logo.svg" alt="logo du menu "></button>
+            @click="menuIsOpen = ! menuIsOpen" 
+            class="header__menuBtn"
+            x-text="menuIsOpen ? 'X' : '&#9776;'"
+          ><img src="/public/img/menu logo.svg" alt="logo du menu "></button>
       <nav id="mainNav" 
       x-show="menuIsOpen" 
-      x-transition.duration.800ms
 
       class="menu"
       >
