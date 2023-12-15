@@ -7,3 +7,10 @@ text-align: center;
 margin: 10px;
 padding-bottom: 1rem;
 }
+
+.image__article {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+}
