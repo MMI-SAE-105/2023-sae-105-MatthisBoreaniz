@@ -52,15 +52,19 @@
     margin: 20px;
  }
 
- .section__menu_presentation.item {
+ .section__menu_presentation.item  {
+    text-decoration: none;
     font-family: 'MyCustomFont';
     margin: 10px;
     padding-left: 5px;
     background-color: rgba(46, 156, 240, 1);
     color: rgb(255, 255, 255);
-    border-radius: 20px;
-  
+    border-radius: 20px;        
     padding-bottom: 0.7rem;
     padding-top: 0.7rem ;
 
+ }
+
+ .section__menu_presentation.list a {
+    text-decoration: none;
  }
