@@ -52,7 +52,7 @@
     display: block; /* Add this line */
     margin: auto; /* Add this line */
     width: 50%; /* Add this line */
-    margin-bottom: 10px;
+    margin-bottom: 20px;
     border-radius: 5px;
     padding: 1rem;
 }
@@ -154,7 +154,7 @@
     }
     .actif {
         transition: all 0.8s ease-in-out;
-      color: rgba(46, 156, 240, 1);;
+      color: rgba(46, 156, 240, 1);
      text-decoration: none;
     }
  

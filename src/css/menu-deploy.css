@@ -12,7 +12,7 @@
     height: 100vh;
     transform: translate(-50%, -50%);
     z-index: 2;
-    background-color:rgba(53, 53, 53, 1);
+    background-color:rgb(255, 255, 255);
 }
 .menu-open {
     /* autres styles */
@@ -42,7 +42,6 @@
 
  .section__menu_presentation.title {
     color: rgba(46, 156, 240, 1);
-    padding-top: 10rem ;
     font-family: 'MyCustomFont';
     font-size: 16px;
  }
@@ -60,7 +59,7 @@
     background-color: rgba(46, 156, 240, 1);
     color: rgb(255, 255, 255);
     border-radius: 20px;
-    display: grid;
+  
     padding-bottom: 0.7rem;
     padding-top: 0.7rem ;
 
