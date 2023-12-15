@@ -1,12 +1,14 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" x-data="menuIsOpen: false">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Tarifs et Horair</title>
+    <title>architecte</title>
     <link rel="stylesheet" href="/src/css/style.css">
     <script src="//unpkg.com/alpinejs" defer></script>
+    
 </head>
+
 <body x-data="{ menuIsOpen: false }" x-bind:class="{ 'no-scroll': menuIsOpen }">
     <header class="header">
         <a class="header__logo" href="index.html"><img src="/public/img/logo v2.svg" alt="logo du site "></a>
@@ -57,58 +59,35 @@
       </nav>
     </header>
 
-    <main>
-    <H1 class="infos__title">TARIFS et HORAIRES</H1>
-<div class="tarifs">
-    <section class="tarif">
-        <span class="tarif__def">Plein Tarif</span>
-        <span class="tarif__prix">
-            <p class="tarif__prix prix"><strong>11€</strong></p>
-            <button class="billeterie__petit"> <strong>Billeterie</strong></button>
-        </span>
-    </section>
-    <section class="tarif">
-        <span class="tarif__def"> Réduit</span>
-        <span class="tarif__prix">
-            <p class="tarif__prix prix"><strong>7.50€€</strong></p>
-            <button class="billeterie__petit"> <strong>Billeterie</strong></button>
-        </span>
-    </section>
-    <section class="tarif">
-        <span class="tarif__def">13-25 Ans</span>
-        <span class="tarif__prix">
-            <p class="tarif__prix prix"><strong>5€</strong></p>
-            <button class="billeterie__petit"> <strong>Billeterie</strong></button>
-        </span>
-    </section>
-    <section class="tarif">
-        <span class="tarif__def"> Pass</span>
-        <span class="tarif__prix">
-            <p class="tarif__prix prix"><strong>18-50€€</strong></p>
-            <button class="billeterie__petit"> <strong>Billeterie</strong></button>
-        </span>
-    </section>
-</div>
-    <h2 class="infos__undertitle">ENTRÉE GRATUITE SIVOUS REMPLISSEZ LES CONDITIONS SUIVANTES : </h2>
-    <ul class="infos__undertitle list">
-        <li>Moins de 13 ans</li>
-        <li>Laisser-passer annuel</li>
-        <li>carte Icom</li>
-        <li>carte de presse</li>
-        <li>Carte d'invalidité</li>
-        <li>Etudiants</li>
-        <li>si possession du pass</li>
-    </ul>
+    <H1 class="infos__title">Norman Forster</H1>
+    <figure>
+        <img src="/public/img/norman foster verre.jpg" alt="norman foster bras croisé">
+        <figcaption  class="legende__image">Photo de Norman Foster</figcaption>
+    </figure>
+    <p   class="paragraphe__image"> Norman Foster est un architecte et designer britannique né le premier juin 1935 (88 ans), il a étudié à l’École d’architecture de Yale et à l'École d'architecture et de planification urbaine de l'Université de Manchester.
+    </p>
+    <figure>
+        <img src="/public/img/yale ecole.jpg" alt="yale ">
+        <figcaption class="legende__image">Photo l'école de Yale</figcaption>
+    </figure>
+    <p class="paragraphe__image"> Lui et ses constructions sont étroitement associés au développement de l’architecture high-tech, il est aussi reconnu comme une figure clé de l’architecture moderniste britannique.
+    </p>
+    <figure>
+        <img src="/public/img/high tech architecture.jpg" alt="architecture high tech">
+        <figcaption class="legende__image">Architecture High-Tech</figcaption>
+    </figure>
+    <p class="paragraphe__image"> Il a travaillé avec des partenaires commerciaux tels que Richard Rogers, Michel Virlogeux et Wendy Foster. Il a remporté de nombreux prix et récompenses prestigieux dont le prix Pritzker d'architecture, le prix Stirling et la médaille d'or royale
+    </p>
+    <figure>
+        <img src="/public/img/medaille d or.jpg" alt="gold medal">
+        <figcaption class="legende__image">Photo de la medaille d'or</figcaption>
+    </figure>
+    <p class="paragraphe__image"> Norman Foster est un architecte et designer britannique né le premier juin 1935 (88 ans), il a étudié à l’École d’architecture de Yale et à l'École d'architecture et de planification urbaine de l'Université de Manchester.
+    </p>
 
-    <h2  class="infos__undertitle">LES HORAIRES D'OUVERTURE :</h2>
-    <ul class="infos__undertitle list">
-        <li>Tous les jours de 11h à 20h, sauf le lundi. </li>
-        <li>Nocturne le mardi, jusqu'à 22h. </li>
-        <li>La fermeture des salles débute à 19h45 (21h45 les mardis).</li>
-    </ul>
+    
 
     <button class="billeterie"> <strong>Billeterie</strong></button>
-</main>
 
     <footer class="footer">
         <section  class="footer__formulaire">
